@@ -14,7 +14,7 @@ var edad
 
     }
 
-    //if(edad < 18)
+    else
     {
         alert("Es Menor de Edad");
 
