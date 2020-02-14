@@ -1,24 +1,31 @@
-function mostrar()
-{
-//tomo la edad  
+function mostrar() {
+    //tomo la edad  
 
-var edad
+    var edad
 
     edad = parseInt(document.getElementById("edad").value);
 
 
-    if(edad > 17 + )
-    {
-        alert("Es Mayor de edad");
+/*    if (edad >= 13 && edad < 18) {
+
+        alert("Es Adolescente");
 
 
+    }*/
+
+    if (!(edad < 13 || edad > 17)){
+        alert("Es Adolescente");
     }
 
-    else
-    {
-        alert("Es Menor de Edad");
 
 
-    }
 
-}//FIN DE LA FUNCIÓN
+
+}
+
+//  OPERADORES LOGICOS
+//  OR || pipe
+// AND && ampersand
+// NOT !
+
+//FIN DE LA FUNCIÓN
