@@ -1,9 +1,12 @@
 function mostrar()
 {
 
-	var numero = prompt("ingrese un número entre 0 y 10.");
+	var numero
 
-	while
+	while (clave !="7"){
 
+		numero = prompt("ingrese el número clave.");
+	
+	}
 
 }//FIN DE LA FUNCIÓN

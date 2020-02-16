@@ -1,18 +1,17 @@
-function mostrar()
-{
+function mostrar() {
 	//Genero el número RANDOM entre 1 y 10 
-	
+
 	var numero;
-		var maximo = 10;
+	var maximo = 10;
 
-		var minimo = 1;
+	var minimo = 1;
 
-		numero = Math.floor(Math.radom() * ((maximo + 1) - minimo) + minimo);
+	numero = Math.floor(Math.random() * ((maximo + 1) - minimo) + minimo);
 
-		alert(numero);
+	alert(numero);
 
 }//FIN DE LA FUNCIÓN
 
 /*
 
-Math.floor( Math.random()*((maximo +1)- minimo)+minimo)
+Math.floor( Math.random()*((maximo +1)- minimo)+minimo)*/

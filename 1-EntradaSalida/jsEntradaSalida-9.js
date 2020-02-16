@@ -23,7 +23,7 @@ function mostrarAumento() {
     //num1 = parseFloat(document.getElementById("sueldo").value) ;
     // para tomar números con decimales.
 
-    porc = (num1 * 10) / 100;
+    porc = num1 * 10 / 100;
 
     // porc = num1 * 1.1  --- > Así se ve Horrible.
 
