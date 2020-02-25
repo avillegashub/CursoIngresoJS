@@ -8,7 +8,120 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
 
  */
-function CalcularPrecio () 
-{
- 	
+function CalcularPrecio() {
+
+    var lamp;
+    var precio = 35;
+    var arLuz = 0;
+    var feLam = 0;
+    var tax;
+    var final;
+    var diezpor;
+    var marca;
+    var descuento = 0;
+
+    marca = document.getElementById("Marca").value;
+
+    lamp = parseInt(document.getElementById("Cantidad").value);
+
+    suma = lamp * precio;
+
+
+    if (lamp > 5) {
+        descuento = suma * 50 / 100;
+
+
+    }
+
+    if (lamp > 2 && lamp < 6) {
+
+
+        if (marca == "ArgentinaLuz") {
+
+            if (lamp == 3) {
+
+                descuento = suma * 15 / 100;
+
+            }
+
+            else if (lamp == 4) {
+
+                descuento = suma * 25 / 100;
+
+            }
+
+            else {
+
+                descuento = suma * 40 / 100;
+
+            }
+        }
+        else if (marca == "FelipeLamparas") {
+            if (lamp == 3) {
+
+                descuento = suma * 10 / 100;
+
+            }
+
+            else if (lamp == 4) {
+
+                descuento = suma * 25 / 100;
+
+            }
+
+            else {
+                descuento = suma * 30 / 100;
+            }
+        }
+        else {
+            if (lamp == 3) {
+                descuento = suma * 5 / 100;
+            }
+
+            else if (lamp == 4) {
+                descuento = suma * 20 / 100;
+            }
+
+            else {
+                descuento = suma * 30 / 100;
+            }
+
+        }
+
+
+    }
+
+
+    final = suma - descuento;
+
+
+    if (final > 120) {
+        diezpor = final * 10 / 100;
+
+        document.getElementById("precioDescuento").value = "Usted pago : " + (final + diezpor) + " siendo " + diezpor + " el impuesto que se pagó.";
+    }
+
+    else {
+        document.getElementById("precioDescuento").value = final;
+    }
+
+
+
 }
+/*
+
+
+
+
+<>
+
+
+<OPTION >ArgentinaLuz</OPTION>
+					<OPTION >FelipeLamparas</OPTION>
+					<OPTION >JeLuz</OPTION>
+					<OPTION >HazIluminacion</OPTION>
+					<OPTION >Osram</OPTION>
+
+
+*/
+
